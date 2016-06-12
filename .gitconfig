@@ -1,0 +1,21 @@
+[user]
+	name = Stefan Qin
+	email = stefan_qin@yahoo.com
+[filter "lfs"]
+	required = true
+	required = true
+	required = true
+	required = true
+	required = true
+	required = true
+	required = true
+	required = true
+	required = true
+	required = true
+	required = true
+	required = true
+	smudge = git-lfs smudge %f
+	clean = git-lfs clean %f
+[alias]
+    #stp = show_tree_pretty
+    stp = ls-tree --full-tree -r --name-only HEAD
