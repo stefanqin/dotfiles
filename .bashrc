@@ -8,4 +8,5 @@ alias pbpaste='cat /dev/clipboard'
 fi
 [/bash]
 
-#git
+#add sudo command
+PATH=$HOME/bin:$PATH
