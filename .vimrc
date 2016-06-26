@@ -35,12 +35,24 @@ nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 call plug#begin('~/.vim/plugged')
 
 "Seamless vim-tmux pane navigator
+"Note: this doesn't actually work?
 Plug 'christoomey/vim-tmux-navigator'
 
+"NERDTree graphical file navigator
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+"Vim for TeX
 Plug 'lervag/vimtex'
+
+"Emmet for Vim
+Plug 'mattn/emmet-vim'
+
+"vim for jinja
+Plug 'mitsuhiko/vim-jinja'
+
+"Support for matching tags in HTML and Latex
+Plug 'tmhedberg/matchit'
 
 "Colors
 Plug 'w0ng/vim-hybrid'
