@@ -1,6 +1,11 @@
-#Vim Files
+# Vim Files
 *.swp
+*.swn
+*.swo
 .netrwhist
+
+# python files
+__pycache__/
 
 # Windows image file caches
 Thumbs.db

@@ -16,6 +16,12 @@ set autoindent
 " Use 256 colours
 "set t_Co=256
 
+"Remove preview window in python
+set completeopt-=preview
+
+"Disable omnifunc
+set omnifunc=''
+
 set shell=/bin/sh
 
 "underlines the current line
@@ -24,17 +30,20 @@ set cul
 " Useful mappings
 imap <c-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
+let g:NERDTreeWinSize= 35
+let g:Tlist_WinWidth = 45
+let Tlist_Use_Right_Window   = 1
+
+"Explorer toggles
+map <F11> :TlistToggle<cr>
+map <F10> :NERDTreeToggle<CR>
+
 "Open NERDTree on startup
 autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-map <F10> :NERDTreeToggle<CR>
-
-"taglist toggle
-nnoremap <F11> :TlistToggle<cr>
-
-"let g:tmux_navigator_no_mappings = 1
+let g:tmux_navigator_no_mappings = 1
 
 nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
