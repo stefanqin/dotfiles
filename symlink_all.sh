@@ -3,5 +3,7 @@
 # This file symlinks all the existing dot to root.
 
 for dotfile in ~/Dotfiles/.*; do
-    ln -sv "$dotfile" "$HOME/$dotfile"
+    # Match only the filename part of a variable.
+    file_name="$( echo "$dotfile"|grep -o "\..*" )"
+    ln -sv "$dotfile" "$HOME/$file_name"
 done
