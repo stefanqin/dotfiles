@@ -20,3 +20,5 @@ vim .
 ```
 
 Stef's dotfiles are now ready for use!
+
+P.S To install sudo, fallow this link: http://stackoverflow.com/a/21024592
