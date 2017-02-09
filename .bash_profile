@@ -7,3 +7,5 @@ fi
 if [ -e ~/.bashrc ] ; then
  source ~/.bashrc
 fi
+
+PATH=$PATH:$HOME/anaconda/bin
