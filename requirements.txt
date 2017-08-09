@@ -1,0 +1,4 @@
+virtualenv
+matplotlib
+python
+python3

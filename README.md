@@ -22,3 +22,22 @@ vim .
 Stef's dotfiles are now ready for use!
 
 P.S To install sudo, follow this link: http://stackoverflow.com/a/21024592
+
+*Additional Notes*
+1. Installing dependencies:
+```
+sudo apt install python3-pip
+pip install -r requirements.txt
+```
+
+2. 
+To add alias for desktop on windows powershell in linux subsystem for windows:
+```
+cd ~
+alias desktop="/mnt/c/Users/stefa/Desktop/"
+```
+
+To enter the desktop, use:
+```
+cd $desktop
+```
