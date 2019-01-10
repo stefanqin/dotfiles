@@ -26,6 +26,8 @@ P.S To install sudo, follow this link: http://stackoverflow.com/a/21024592
 *Additional Notes*
 1. Installing dependencies:
 ```
+sudo apt update
+sudo apt upgrade
 sudo apt install python3-pip
 pip install -r requirements.txt
 ```
